@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(../public/homepage/pictures/backpicture.png);
+  
+    
+}
+
+#image1 {
+  width: 400px;
+  object-fit: contain;
+}
+
+#image2 {
+  width: 100%;
+}
+
+#image3 {
+  width: 100%;
+}
+
+#download-button{
+  position: absolute;
+  z-index: 1;
+}
+
+#topWords {
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+#MiddleWords {
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+#bottomWords {
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
