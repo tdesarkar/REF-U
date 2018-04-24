@@ -9,6 +9,7 @@ var router = new express.Router();
 
 router.post("/referenceletter", referenceletterController.create);
 
+router.get("/referenceletter", referenceletterController.test);
 // router.post("/share", referenceletterController.share);
 
 router.put("/referenceletter/:id", referenceletterController.update);

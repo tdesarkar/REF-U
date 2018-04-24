@@ -2,7 +2,9 @@ var ListItem = require("../models/Referenceletter");
 
 module.exports = {
 
-
+  test: function (req, res) {
+    res.send('Hitting Referenceletter routes! Now what?!');
+  },
 
   create: function (req, res) {
     var newReferenceletter = new Referenceletter(req.body);
