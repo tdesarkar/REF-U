@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ListItem from './ListItem.js';
+import ListItem from './referenceItem.js';
 import InputBar from './InputBar.js'
 import helpers from '../utils/helpers.js'
 import Navbard from './Navbar.js';
@@ -61,7 +61,7 @@ class CreateReference extends Component {
   //handle form submit to grab state values
   handleSubmit(event) {
     event.preventDefault();
-    //list name to save
+    //reference name to save
     console.log(this.state.listName);
     //array of objects with list items input
     console.log(this.state.todoList);
