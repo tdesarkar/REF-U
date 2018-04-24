@@ -6,9 +6,9 @@ This MERN stack application allows users to create and write reference letters f
 ## Hosted:
 Heroku: <https://pure-savannah-70897.herokuapp.com/>
 
-Test Username: test@test.com
+Test Username: 
 
-Test Password: test
+Test Password: 
 
 ## Technologies/Libraries Used:
 * Node.js <https://nodejs.org/en/>
