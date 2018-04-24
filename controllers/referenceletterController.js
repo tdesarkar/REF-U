@@ -9,7 +9,10 @@ module.exports = {
     console.log(req.body);
 
     Referenceletter.save().then(function (newReferenceletter) {
-      res.send("Reference Letter saved!")
+      User.findOneAndUpdate(
+        { _id: createdList.owner },
+        { $push: { user_lists: createdList._id } }).then(function (updatedUser) {
+            res.send("Reference Letter saved!")
     }).catch(function (err) {
       console.log(err);
       res.send("Error adding Reference Letter")
