@@ -4,7 +4,7 @@ var axios = require("axios");
 // Helper functions for making API Calls
 var helper = {
     share: function(shareOptions){
-        return axios.post("/list/share/", shareOptions);
+        return axios.post("/referenceletter/share/", shareOptions);
     },
     getSharedLists: function(userId) {
         return axios.get("/user/sharedlists/"+userId);
@@ -14,15 +14,15 @@ var helper = {
     },
 
     postList: function (list) {
-        return axios.post("/list/", list);
+        return axios.post("/referenceletter/", list);
     },
 
     getSavedList: function (userId) {
-        return axios.get("/list/user/" + userId);
+        return axios.get("/referenceletter/user/" + userId);
     },
 
     getListItems: function (listId) {
-        return axios.get("/list/" + listId);
+        return axios.get("/referenceletter/" + listId);
     }
 
 };
