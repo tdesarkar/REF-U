@@ -6,6 +6,9 @@ var helper = {
     share: function(shareOptions){
         return axios.post("/referenceletter/share/", shareOptions);
     },
+    test: function(){
+        return axios.get("/referenceletter/1");
+    }
     getSharedLists: function(userId) {
         return axios.get("/user/sharedlists/"+userId);
     },

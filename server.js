@@ -29,11 +29,11 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 app.use(express.static('./public'));
+app.use("/", routes);
 app.get("/*", function (req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-app.use("/", routes);
 //DB configuration
 // -------------------------------------------------
 
@@ -59,9 +59,6 @@ db.on("error", function (err) {
     console.log("Mongoose err: " + err);
 });
 
-app.get("/referenceletter/1", function(req, res){
-    res.send('in server file');
-})
 
 //Simple Index Route
 // app.get("/",function(req, res){

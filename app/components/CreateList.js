@@ -73,6 +73,9 @@ class CreateReference extends Component {
     }
 
     console.log(finalList);
+    helpers.test().then(function(data){
+      console.log(data);
+    })
 
     helpers.postList(finalList).then(function (data) {
       console.log(data);

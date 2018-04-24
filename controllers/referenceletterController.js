@@ -3,6 +3,7 @@ var ListItem = require("../models/Referenceletter");
 module.exports = {
 
   test: function (req, res) {
+    console.log('HELLO');
     res.send('Hitting Referenceletter routes! Now what?!');
   },
 
