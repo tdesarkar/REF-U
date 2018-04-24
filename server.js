@@ -7,8 +7,8 @@ let mongoose = require("mongoose");
 
 //const jwt = require("express-jwt");
 //const jwks = require('jwks-rsa');
-// var List = require("./modelsreference.js");
-// var ListItem = require("./modelsreferenceItem.js");
+// var List = require("./models/List.js");
+// var ListItem = require("./models/ListItem.js");
 // var User = require("./models/User.js");
 // var Comments = require("./models/Comments/js");
 
