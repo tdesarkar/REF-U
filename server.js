@@ -60,9 +60,9 @@ db.on("error", function (err) {
 });
 
 //Simple Index Route
-app.get("/",function(req, res){
-    res.send(index.html);
-});
+// app.get("/",function(req, res){
+//     res.send(index.html);
+// });
 
 //Handle form submission, save submission to mongo
 app.post("/submit", function(req,res){
