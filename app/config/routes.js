@@ -7,7 +7,7 @@ import Auth from '../Auth/Auth';
 import history from '../history';
 import Login from "../components/Login.js";
 import Profile from "../components/Profile.js";
-import ListItem from "../components/ListItem.js";
+import ListItem from "../componentsreferenceItem.js";
 import SavedPanel from "../components/SavedPanel.js";
 import SharedPanel from "../components/SharedPanel.js";
 import CreateList from "../components/CreateList.js";
