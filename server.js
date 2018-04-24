@@ -51,7 +51,7 @@ dbConnection.then(function(db){
     console.log("Error connecting to mongoose")
 })*/
 
-mongoose.connect("mongodb://tdesarkar:Hanumanji10*@ds155160.mlab.com:55160/refer-u")
+mongoose.connect("mongodb://tdesarkar:Hanumanji10*@ds155160.mlab.com:55160/refer-u");
 
 var db = mongoose.connection;
 
