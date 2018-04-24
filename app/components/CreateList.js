@@ -105,7 +105,7 @@ class CreateReference extends Component {
                 })}
               </div>
               <form id="list-name-form" onSubmit={this.handleSubmit}>
-                <TextField id="save-list-name-txt" type="text" value={this.state.listName} onChange={this.handleChange('listName')} hintText="Reference Name" floatingLabelText="Enter a Reference Name" style={textFieldStyle} underlineStyle={{display:'none'}} />
+                <TextField id="save-list-name-txt" type="file" value={this.state.listName} onChange={this.handleChange('listName')} hintText="Reference Name" floatingLabelText="Enter a Reference Name" style={textFieldStyle} underlineStyle={{display:'none'}} />
                 <RaisedButton id="save-reference-btn" type="submit" primary={true} label="Save Reference" />
               </form>
             </div>
