@@ -6,8 +6,9 @@ module.exports = {
 
   create: function (req, res) {
     var newReferenceletter = new Referenceletter(req.body);
+    console.log(req.body);
 
-    Referenceletter.save().then(function (newResume) {
+    Referenceletter.save().then(function (newReferenceletter) {
       res.send("Reference Letter saved!")
     }).catch(function (err) {
       console.log(err);
@@ -19,7 +20,7 @@ module.exports = {
     Referenceletter.findOneAndUpdate(
       { _id: req.params.id },
       { $set: req.body },
-      { new: true }).then(function (updatedResume) {
+      { new: true }).then(function (updatedReferenceletter) {
         res.send("Reference Letter updated");
       }).catch(function (err) {
         console.log(err);

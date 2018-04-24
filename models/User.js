@@ -10,7 +10,7 @@ var UserSchema = new Schema({
   picture: {
     type: String
   },
-  Position: {
+  position: {
     type: String
   },
   updated_at: {
@@ -20,18 +20,18 @@ var UserSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'User'
   }],
-  user_resume: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Resume'
-  }],
-  user_coverletter: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Coverletter'
-  }],
+  // user_resume: [{
+  //   type: Schema.Types.ObjectId,
+  //   ref: 'Resume'
+  // }],
+  // user_coverletter: [{
+  //   type: Schema.Types.ObjectId,
+  //   ref: 'Coverletter'
+  // }],
   user_referenceletter: [{
     type: Schema.Types.ObjectId,
     ref: 'Referenceletter'
-  }]
+  }],
 });
 
 var User = mongoose.model('User', UserSchema);
